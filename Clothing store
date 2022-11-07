@@ -1,0 +1,29 @@
+CREATE TABLE biancas_store (id INTEGER PRIMARY KEY, item TEXT, price INTEGER, size TEXT, color TEXT, quanity INTEGER); 
+
+INSERT INTO biancas_store VALUES (1, "active shirt", 15, "medium", "pink", 20);
+INSERT INTO biancas_store VALUES (2, "socks", 6, "medium/large", "black", 35);
+INSERT INTO biancas_store VALUES (3, "active shorts", 15, "medium", "pastel blue", 30);
+INSERT INTO biancas_store VALUES (4, "sports bra", 25, "medium/large", "grey", 25);
+INSERT INTO biancas_store VALUES (5, "active shirt", 15, "medium", "black", 30);
+INSERT INTO biancas_store VALUES (6, "active shorts", 15, "medium", "pink", 30);
+INSERT INTO biancas_store VALUES (7, "active shoes", 50, "medium/large","grey", 35);
+INSERT INTO biancas_store VALUES (8, "crew neck sweater", 35, "medium", "navy blue", 35);
+INSERT INTO biancas_store VALUES (9, "hoodie", 45, "medium", "black", 35);
+INSERT INTO biancas_store VALUES (10, "oversized tee", 20, "medium", "orange/white", 30);
+INSERT INTO biancas_store VALUES (11, "flared leggings", 30, "medium", "black", 25);
+INSERT INTO biancas_store VALUES (12, "leggings", 30, "medium", "black", 30);
+INSERT INTO biancas_store VALUES (13, "flared leggings", 30, "medium", "pink", 30);
+INSERT INTO biancas_store VALUES (14, "leggings", 30, "medium", "pink", 30); 
+INSERT INTO biancas_store VALUES (15, "hoodie", 45, "medium", "sky blue", 25); 
+
+
+display all items from database
+SELECT *FROM biancas_store;
+
+Which items are equal or less than 15 dollars? 
+SELECT*FROM biancas_store
+WHERE price <= 15;
+
+Which items have a quanity of equal or less than 30?
+SELECT * FROM biancas_store 
+WHERE quanity <=30
